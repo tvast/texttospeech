@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>test conversational</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    
+  </head>
+  <body>
+  <!-- https://responsivevoice.org/api/ -->
+    <input onclick="hello ()" type='button' value='🔊 Play' />
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script type="text/javascript">
+      var p = "salut c'est theophile pour un test de lecture en html javascript"
+      function hello () {
+        responsiveVoice.speak(p, "French Female", {pitch: 1});
+
+      }
+      
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </body>
+</html>
